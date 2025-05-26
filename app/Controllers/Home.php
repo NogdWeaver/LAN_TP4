@@ -9,6 +9,6 @@ class Home extends BaseController
         /**
          * return view('welcome_message');
          */
-        return view('TEST');
+        return view('page_acceuil');
     }
 }
