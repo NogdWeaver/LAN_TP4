@@ -1,3 +1,31 @@
+body {
+
+
+
+background-image: url('IMG/Background.jpg');
+background-size: 100%;
+background-blend-mode: multiply;
+background-color: rgba(0, 0, 0, 0.829);
+background-position: center;
+
+
+}
+
+
+
+
+h1 {
+  text-align: center;
+  width: 100%;
+  background-color: #750606af;
+  color: white;  
+
+
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+
 /* FOOTER */
 
 .site-footer,
@@ -7,7 +35,7 @@ footer {
 	padding: 1.5rem 0;
 	color: black;
 	border-top: 1px solid black;
-    border-bottom: 1px solid black;
+  border-bottom: 1px solid black;
 	font-size: 0.95rem;
 	margin-top: auto;
 
@@ -48,3 +76,29 @@ li a:hover {
 
 /*END MENU*/
 
+/*ACCUEIL*/
+
+
+.accgridparent {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+
+    color: white;
+
+    /*POSITION*/
+    width: 100%;
+    text-align: center;
+
+    margin-top: 10%;
+    margin-bottom: 10%;
+  
+}
+    
+
+.divacc2 {
+    grid-row-start: 2;
+    margin-top: 5%;
+}
+        
