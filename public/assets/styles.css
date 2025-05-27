@@ -27,4 +27,15 @@
     grid-column-start: 5;
     grid-row-start: 1;
 }
-        
+
+.site-footer,
+footer {
+	width: 100%;
+	text-align: center;
+	padding: 1.5rem 0;
+	color: black;
+	border-top: 3px dotted black;
+    border-bottom: 3px dotted black;
+	font-size: 0.95rem;
+	margin-top: auto;
+}
