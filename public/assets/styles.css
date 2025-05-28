@@ -1,14 +1,10 @@
 body {
-
-
-
 background-image: url('IMG/Background2.png'), url('IMG/Background_eyes2.png');
 background-size: 100%;
 background-blend-mode: hard-light;
 /*background-color: rgba(0, 0, 0, 0.829); */
 
-
-background-position: center;
+background-position:  right center; /* essayer d'obtenir un arrière plan consistant sur tout les pages ( voir comm bas age ) */
 
 animation: backgroundFlicker;
   animation-duration: 5s;
@@ -165,3 +161,53 @@ li a:hover {
 .divlistetest {
   color: #ffffff;
 }
+
+/* LINK */
+
+a:link {
+  color: rgb(255, 255, 255);
+}
+
+
+a:visited {
+  color: rgb(255, 183, 183);
+}
+
+
+a:hover {
+  color: rgb(255, 255, 255);
+}
+
+
+a:active {
+  color: blue;
+}
+
+
+/*GRID LISTE JEU*/
+
+
+.lsgridparent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 8px;
+
+    width: 100%;
+    text-align: center;
+
+    margin-top: 5%;
+    margin-bottom: 10%;
+  
+    color:white;
+}
+
+
+    
+
+
+
+
+/* Pour le fond : ça a avoir avec le premier élément sous body (dans accueil par exemple -> la grid a 100% de with et une margin spéciale etc ) 
+* A TESTER Pour le rest ed etoute façon l'animation du fond est un WIP
+*/ 
