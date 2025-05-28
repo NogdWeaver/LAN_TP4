@@ -16,8 +16,8 @@
         </p>    
     </div>
     <div class="divacc2">
-        <p>
-            JEUX
+        <p> 
+           <a href='<?= base_url('/listeJeux') ?>'> JEUX </a>
         </p>    
     </div>
         <div class="divacc3">

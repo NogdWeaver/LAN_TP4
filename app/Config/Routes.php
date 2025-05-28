@@ -8,3 +8,9 @@ use CodeIgniter\Router\RouteCollection;
 
 
 $routes->get('/', 'Home::index');
+
+/**
+ * ROUTES DE L'ACCUEIL
+ */
+
+ $routes->get('/listeJeux', 'jeuCtrl::listejeux');
