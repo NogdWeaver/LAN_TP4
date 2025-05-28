@@ -14,3 +14,4 @@ $routes->get('/', 'Home::index');
  */
 
  $routes->get('/listeJeux', 'jeuCtrl::listejeux');
+ $routes->get('/listeJoueurs', 'joueurCtrl::listeJoueur');

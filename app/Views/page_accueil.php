@@ -12,7 +12,7 @@
 <div class="accgridparent">
     <div class="divacc1">
         <p>
-            JOUEURS
+            <a href=' <?= base_url('/listeJoueurs') ?>'> JOUEURS </a>
         </p>    
     </div>
     <div class="divacc2">

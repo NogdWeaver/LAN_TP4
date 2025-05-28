@@ -1,18 +1,24 @@
 <?php
 
 namespace App\Models;
+
 use CodeIgniter\Model;
+
 
 class joueurM extends Model {
 
     protected $table            ='joueurs';
     protected $primaryKey       ='IDuser';
     protected $allowedFields    =['IDuser', 'NOM','PRENOM'];
+    protected $returnType       ='array';
 
-    function getjoueurbyID($IDuser){
+   public function getAllarray(){
 
-        return $this->find($IDuser);
+        $requete = $this->select('*')->orderBy('IDuser');
+
+        return $requete->findAll();
     }
 
+     
 
 }
