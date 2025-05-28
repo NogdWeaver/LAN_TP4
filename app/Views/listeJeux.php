@@ -5,16 +5,18 @@
 ?>
 
 
-<?php if (empty($jeudata)): ?>     
-    <div class ='divlistetest'> QQLCHOSE: 
-   
+<?php if (empty($jeu)): ?>     
+    <div class ='divlistetest'>
+        Pas de Jeux!! :c 
     </div>
 <?php else: ?>
-    <div class ='divlistetest'> QQLCHOSE DE MIEUX:  </div>
-    <?php foreach($jeudata as $row): ?>
+    <div class ='divlistetest'>  <?= var_dump($jeu) ?>  </div>
+    <?php foreach($jeu as $row): ?>
             <div class='divlistetest'>
             
-            <?= esc($row['MONjeu']) ?>
+            <?= 
+            $row['NOMjeu'] 
+            ?>
 
             </div>
 

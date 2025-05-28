@@ -16,10 +16,12 @@ class jeuCtrl extends BaseController{
 
         $jeudata = $jeuModel->getAllarray();
 
-        var_dump($jeudata);
+       /*  var_dump($jeudata); */
         
-        return view('/listeJeux', $jeudata);
+        return view('/listeJeux', ['jeu' => $jeudata]);
 
+        /* le 'jeu' dans ['jeu' => $jeudata] correspond a la variable utilisable dans la view
+        * En gros c'est la "clé" qui associe la varialble qu'on va utiliser et le tableau */
     }
 
 }
