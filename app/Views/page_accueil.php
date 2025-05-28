@@ -12,10 +12,20 @@
 <div class="accgridparent">
     <div class="divacc1">
         <p>
-            CONSULTATION DE LISTES ( JEUX, JOUEURS )
+            JOUEURS
         </p>    
     </div>
     <div class="divacc2">
+        <p>
+            JEUX
+        </p>    
+    </div>
+        <div class="divacc3">
+        <p>
+            CLASSEMENT GENERAL
+        </p>    
+    </div>
+    <div class="divacc4">
         <p>
             LOGIN
         </p>

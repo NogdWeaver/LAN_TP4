@@ -112,8 +112,8 @@ li a:hover {
 .accgridparent {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 10px;
+    grid-template-rows: repeat(5, 1fr);
+    gap: 20px;
 
     color: white;
 
@@ -122,13 +122,35 @@ li a:hover {
     text-align: center;
 
     margin-top: 15%;
-    margin-bottom: 15%;
+    margin-bottom: 10%;
   
 }
     
-
-.divacc2 {
-    grid-row-start: 2;
-    margin-top: 5%;
+/*DIV GRID POSITIONS*/
+.divacc1{
+    grid-row-start: 1; 
 }
-        
+.divacc2{
+    grid-row-start: 2; 
+}
+.divacc3{
+    grid-row-start: 3; 
+}
+.divacc4{
+    grid-row-start: 4; 
+}
+
+/* HOVER EFFECT ON THE DIVS */
+.divacc1:hover{
+    background-color: #750606af;
+  
+}
+.divacc2:hover{
+    background-color: #750606af;
+}
+.divacc3:hover{
+    background-color: #750606af;
+}
+.divacc4:hover{
+    background-color: #750606af;
+}
