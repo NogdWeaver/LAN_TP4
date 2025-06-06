@@ -1,3 +1,9 @@
-<?php 
+<?php
 
-class login extends 
+use App\Controllers\BaseController;
+
+class login extends BaseController {
+
+
+}
+

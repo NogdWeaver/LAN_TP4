@@ -15,15 +15,15 @@
     <div class="lsgridparent">
 
         <div class="divls1">
-            <?= $row['NOMjeu'] ?>
+            <?= $row['nomjeu'] ?>
         </div>
 
         <div class="divls2">
-            <?= $row['DESCjeu'] ?>
+            <?= $row['descjeu'] ?>
         </div>
         
         <div class="divls3">
-           <img src=" <?= $row['IMGjeu'] ?>">
+           <img src=" <?= $row['imgjeu'] ?>">
         </div>
 
     </div>

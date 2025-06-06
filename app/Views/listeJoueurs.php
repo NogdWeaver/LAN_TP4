@@ -15,11 +15,11 @@
     <div class="lsgridparent">
 
         <div class="divls1">
-            <?= $row['NOM'] ?>
+            <?= $row['nom'] ?>
         </div>
 
         <div class="divls2">
-            <?= $row['PRENOM'] ?>
+            <?= $row['prenom'] ?>
         </div>
         
         <div class="divls3">
