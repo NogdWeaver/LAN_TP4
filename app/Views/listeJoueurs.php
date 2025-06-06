@@ -23,7 +23,7 @@
         </div>
         
         <div class="divls3">
-            <?= $row['IDuser'] ?> - //placeholder pour lien vers profil?//
+            <?= $row['iduser'] ?> - //placeholder pour lien vers profil?//
         </div>
 
     </div>

@@ -8,13 +8,13 @@ use CodeIgniter\Model;
 class joueurM extends Model {
 
     protected $table            ='joueurs';
-    protected $primaryKey       ='IDuser';
-    protected $allowedFields    =['IDuser', 'NOM','PRENOM'];
+    protected $primaryKey       ='iduser';
+    protected $allowedFields    =['iduser', 'nom','prenom'];
     protected $returnType       ='array';
 
    public function getAllarray(){
 
-        $requete = $this->select('*')->orderBy('IDuser');
+        $requete = $this->select('*')->orderBy('iduser');
 
         return $requete->findAll();
     }

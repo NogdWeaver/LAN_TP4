@@ -6,12 +6,12 @@ use CodeIgniter\Model;
 class adminM extends Model {
 
     protected $table            ='admin';
-    protected $primaryKey       ='IDuser';
-    protected $allowedFields    =['IDuser'];
+    protected $primaryKey       ='iduser';
+    protected $allowedFields    =['iduser'];
 
-    function getadminbyID($IDuser){
+    function getadminbyID($iduser){
 
-        return $this->find($IDuser);
+        return $this->find($iduser);
     }
 
 

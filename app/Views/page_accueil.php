@@ -20,12 +20,7 @@
            <a href='<?= base_url('/listeJeux') ?>'> JEUX </a>
         </p>    
     </div>
-        <div class="divacc3">
-        <p>
-            CLASSEMENT GENERAL
-        </p>    
-    </div>
-    <div class="divacc4">
+    <div class="divacc3">
         <p>
             LOGIN
         </p>

@@ -4,7 +4,8 @@ background-size: 100%;
 background-blend-mode: hard-light;
 /*background-color: rgba(0, 0, 0, 0.829); */
 
-background-position:  right center; /* essayer d'obtenir un arrière plan consistant sur tout les pages ( voir comm bas age ) */
+background-position: right center; /* essayer d'obtenir un arrière plan consistant sur tout les pages ( voir comm bas age ) */
+
 
 animation: backgroundFlicker;
   animation-duration: 5s;
@@ -12,7 +13,17 @@ animation: backgroundFlicker;
   animation-iteration-count: infinite;
 
 
+
+
+
+
+position: relative;
+margin: 0;
+padding: 0;
+height: 100%; 
 }
+
+
 
 /*BACKGROUND ANIMATION*/
 

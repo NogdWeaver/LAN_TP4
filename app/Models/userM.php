@@ -6,12 +6,12 @@ use CodeIgniter\Model;
 class userM extends Model {
 
     protected $table            ='users';
-    protected $primaryKey       ='IDuser';
-    protected $allowedFields    =['IDuser', 'LOGIN','MDP'];
+    protected $primaryKey       ='iduser';
+    protected $allowedFields    =['iduser', 'login','mdp'];
 
-    function getuserbyID($IDuser){
+    function getuserbyID($iduser){
 
-        return $this->find($IDuser);
+        return $this->find($iduser);
     }
 
 
