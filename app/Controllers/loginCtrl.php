@@ -2,6 +2,9 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
+use App\Models\AdminM;
+use App\Models\joueurM;
+use App\Models\userM;
 
 class LoginCtrl extends BaseController {
 
@@ -31,8 +34,20 @@ private function loginUser(?object $user = null)  {
 
 public function attemptLogin() {
     
-    
-    
+    $userModel = new userM();
+    $adminModel = new AdminM();
+    $joueurModel = new joueurM();
+
+    $values = $this->request->getPost(['login', 'mdp']);
+    var_dump($userModel->getuserbyLogin('jean'));
+
+    /*
+    if ($values['login'] == $userModel['login'] && $values['mdp'] == $userModel['mdp']) {
+
+        1+1;
+        
+    }
+    */
 }
 
 }

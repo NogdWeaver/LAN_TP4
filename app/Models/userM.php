@@ -14,5 +14,11 @@ class userM extends Model {
         return $this->find($iduser);
     }
 
+    function getuserbyLogin($loginuser){
+
+        return $this->where($loginuser)->limit(1);
+
+    }
+
 
 }
