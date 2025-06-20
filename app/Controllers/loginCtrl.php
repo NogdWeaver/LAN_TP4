@@ -1,12 +1,14 @@
 <?php
+namespace App\Controllers;
 
 use App\Controllers\BaseController;
 
 class LoginCtrl extends BaseController {
-    
 
-public function loginPage(): string {
-    return view('/loginPage');
+
+public function loginPage() {
+    return view('LoginPage');
+
 }
 
 
