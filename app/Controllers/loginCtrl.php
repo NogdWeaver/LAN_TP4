@@ -2,20 +2,36 @@
 
 use App\Controllers\BaseController;
 
-class login extends BaseController {
+class LoginCtrl extends BaseController {
+    
 
-private function loginuser(?object $user = null)  {
+public function loginPage(): string {
+    return view('/loginPage');
+}
+
+
+
+private function loginUser(?object $user = null)  {
     
     $session = session();
     $session->set([
-        'username' => isset($user) ? ($user['login']) . strtoupper($user['login']) :'admin',
-        'loggedIn' => true
+        'username' => $user = $user['login'],
+        'loggedIn' => true,
 
     ]); 
-    if ()
-    return view();
+    if ($user['login']  == 'admin'){
+        return view('');
+    }
+    else{
+        return view('');
+    }
 }
 
+public function attemptLogin() {
+    
+
+    
+}
 
 }
 

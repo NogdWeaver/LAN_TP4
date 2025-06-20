@@ -5,18 +5,18 @@ namespace App\Controllers;
 use App\Controllers\BaseController;
 use App\Models\joueurM;
 
-class joueurCtrl extends BaseController{
+class JoueurCtrl extends BaseController{
 
 
 
 
-    public function listejoueur(){
+    public function listeJoueur(){
 
         $joueurModel = new joueurM();
 
         $joueurdata = $joueurModel->getAllarray();
         
-        return view('/listeJoueurs', ['joueur' => $joueurdata]);
+        return view('/ListeJoueurs', ['joueur' => $joueurdata]);
 
 
     }

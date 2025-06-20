@@ -13,5 +13,6 @@ $routes->get('/', 'Home::index');
  * ROUTES DE L'ACCUEIL
  */
 
- $routes->get('/listeJeux', 'jeuCtrl::listejeux');
- $routes->get('/listeJoueurs', 'joueurCtrl::listeJoueur');
+ $routes->get('/ListeJeux', 'JeuCtrl::listeJeux');
+ $routes->get('/ListeJoueurs', 'JoueurCtrl::listeJoueur');
+ $routes->get('/LoginPage', 'LoginCtrl::loginPage' );
