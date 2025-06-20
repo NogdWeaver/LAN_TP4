@@ -15,5 +15,9 @@ $routes->get('/', 'Home::index');
 
  $routes->get('/ListeJeux', 'JeuCtrl::listeJeux');
  $routes->get('/ListeJoueurs', 'JoueurCtrl::listeJoueur');
-
  $routes->get('/LoginPage', 'LoginCtrl::loginPage');
+
+ /*
+  * LOGIN 
+  */
+$routes->post('/login', 'LoginCtrl::attemptLogin');

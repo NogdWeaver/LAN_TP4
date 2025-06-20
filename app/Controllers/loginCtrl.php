@@ -22,16 +22,16 @@ private function loginUser(?object $user = null)  {
 
     ]); 
     if ($user['login']  == 'admin'){
-        return view('');
+        return view('admin/AdminPage');
     }
     else{
-        return view('');
+        return view('joueur/JoueurPage');
     }
 }
 
 public function attemptLogin() {
     
-
+    
     
 }
 
