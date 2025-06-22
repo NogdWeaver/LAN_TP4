@@ -39,7 +39,7 @@ public function attemptLogin() {
     $joueurModel = new joueurM();
 
     $values = $this->request->getPost(['login', 'mdp']);
-    var_dump($userModel->getuserbyLogin('jean'));
+    var_dump($userModel->getuserbyLogin('admin'));
 
     /*
     if ($values['login'] == $userModel['login'] && $values['mdp'] == $userModel['mdp']) {
