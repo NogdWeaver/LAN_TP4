@@ -16,15 +16,15 @@ public function loginPage() {
 
 
 
-private function loginUser(?object $user = null)  {
+private function loginUser($userInfo)  {
     
     $session = session();
     $session->set([
-        'username' => $user = $user['login'],
+        'username' => $userInfo['login'],
         'loggedIn' => true,
 
     ]); 
-    if ($user['login']  == 'admin'){
+    if ($userInfo['login']  == 'admin'){
         return view('admin/AdminPage');
     }
     else{
@@ -34,20 +34,21 @@ private function loginUser(?object $user = null)  {
 
 public function attemptLogin() {
     
-    $userModel = new userM();
+    $userObject = new userM();
     $adminModel = new AdminM();
     $joueurModel = new joueurM();
 
-    $values = $this->request->getPost(['login', 'mdp']);
-    var_dump($userModel->getuserbyLogin('admin'));
+    $userValues = $this->request->getPost(['login', 'mdp']);
+    $test = $userObject->where('login',$userValues['login'])->first();
 
-    /*
-    if ($values['login'] == $userModel['login'] && $values['mdp'] == $userModel['mdp']) {
 
-        1+1;
-        
-    }
-    */
+    $rechercheUser = $userObject->getuserbyLogin($userValues['login']);
+    //$idUser = $rechercheUser['iduser'];
+
+
+    return $this->loginUser($rechercheUser);
+
+    
 }
 
 }

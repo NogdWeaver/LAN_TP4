@@ -14,7 +14,7 @@ class userM extends Model {
         return $this->find($iduser);
     }
 
-    function getuserbyLogin($loginuser){
+    function getuserbyLogin($loginuser): array{
 
         
         $value = $this->where('login',$loginuser)->findAll();
