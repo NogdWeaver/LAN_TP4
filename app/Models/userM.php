@@ -17,11 +17,9 @@ class userM extends Model {
     function getuserbyLogin($loginuser){
 
         
-        $value = $this->where($loginuser)->limit(1);
+        $value = $this->where('login',$loginuser)->findAll();
 
-        return $value;
-
-        
+        return $value[0];        
 
     }
 
