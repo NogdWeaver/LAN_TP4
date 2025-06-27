@@ -3,7 +3,7 @@
 namespace App\Models;
 use CodeIgniter\Model;
 
-class userM extends Model {
+class UserM extends Model {
 
     protected $table            ='users';
     protected $primaryKey       ='iduser';
@@ -14,9 +14,7 @@ class userM extends Model {
         return $this->find($iduser);
     }
 
-    function getuserbyLogin($loginuser): array{
-
-        
+    function getuserbyLogin($loginuser): array{        
         $value = $this->where('login',$loginuser)->findAll();
 
         return $value[0];        

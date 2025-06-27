@@ -4,7 +4,8 @@ namespace App\Controllers;
 use App\Controllers\BaseController;
 use App\Models\AdminM;
 use App\Models\joueurM;
-use App\Models\userM;
+use App\Models\UserM;
+
 
 class LoginCtrl extends BaseController {
 
@@ -16,37 +17,45 @@ public function loginPage() {
 
 
 
-private function loginUser($userInfo)  {
+private function saveLoginUser($userInfo)  {
     
     $session = session();
     $session->set([
         'username' => $userInfo['login'],
         'loggedIn' => true,
+        'IsAdmin'  => $userInfo['login']  == 'admin',
+        'IsUser'   => true 
+
 
     ]); 
     if ($userInfo['login']  == 'admin'){
-        return view('admin/AdminPage');
+        return redirect()-> to('/admin/AdminPage');
     }
     else{
-        return view('joueur/JoueurPage');
+        return redirect()-> to('/joueur/JoueurPage');
     }
 }
 
 public function attemptLogin() {
     
-    $userObject = new userM();
-    $adminModel = new AdminM();
-    $joueurModel = new joueurM();
+    $userObject = new UserM();
 
-    $userValues = $this->request->getPost(['login', 'mdp']);
-    $test = $userObject->where('login',$userValues['login'])->first();
+    /*
+    *$adminModel = new AdminM();
+    *$joueurModel = new joueurM();
+    */
 
+    $userValues = $this->request->getPost();
 
+    //$test = $userObject->where('login',$userValues['login'])->first();
+
+    // var_dump($userValues);
     $rechercheUser = $userObject->getuserbyLogin($userValues['login']);
-    //$idUser = $rechercheUser['iduser'];
+    //  var_dump($rechercheUser);
+    // $idUser = $rechercheUser['iduser'];
 
 
-    return $this->loginUser($rechercheUser);
+   return $this->saveLoginUser($rechercheUser);
 
     
 }

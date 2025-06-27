@@ -21,4 +21,8 @@ class JoueurCtrl extends BaseController{
 
     }
 
+        function index() {
+        return view('joueur/JoueurPage');
+    }
+
 }

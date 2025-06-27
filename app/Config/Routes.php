@@ -21,3 +21,19 @@ $routes->get('/', 'Home::index');
   * LOGIN 
   */
 $routes->post('/login', 'LoginCtrl::attemptLogin');
+$routes->get('/login','LoginCtrl::loginPage');
+
+/*
+ * ADMIN
+ */
+
+ $routes->get('/admin/AdminPage', 'AdminCtrl::index');
+
+/*
+* JOUEURS
+*/
+
+ $routes->get('/joueur/JoueurPage','JoueurCtrl::index');
+
+
+
