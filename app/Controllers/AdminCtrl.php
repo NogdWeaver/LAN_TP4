@@ -8,7 +8,8 @@ use App\Models\AdminM;
 class AdminCtrl extends BaseController{
 
     function index() {
-        return view('admin/AdminPage');
+        return  view('templates/header') . view('admin/AdminPage') . view('templates/footer');
     }
     
 }
+
